@@ -1,0 +1,11 @@
+.grid__container {
+    background-color: yellow;
+    display: grid;
+    place-items: center;
+    margin: 4rem 1.2rem;
+}
+
+
+.grid__container-one, .grid__container-two, .grid__container-three, .grid__container-four, .grid__container-five {
+    border: 2px solid black
+}
