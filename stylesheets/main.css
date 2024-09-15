@@ -16,6 +16,7 @@ font-family: "Barlow Semi Condensed", system-ui;
 font-style: normal;
 }
 
+
 .grid__container {
     display: grid;
     grid-template-columns:  21.067rem;
@@ -289,36 +290,41 @@ font-style: normal;
     line-height: 1.2rem;
 }
 
-@media all and (min-width: 1000px) {
-
+@media all and (min-width: 700px) {
     body {
-        padding: 8rem;
+        padding: 5rem;
     }
 
     .grid__container {
-        grid-template-columns: auto auto auto;
-        margin: 0;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        
     }
 
-    .grid__container-two, .grid__container-one {
+    .grid__container-one {
+        grid-column: 1 / 4;
         align-self: start;
-        grid-row: 1;
     }
 
-    .grid__container-five {
-        grid-row: 1;
-        grid-column: 3;
+    .grid__container-two {
+        align-self: start;
     }
 
     .grid__container-three {
-        grid-column: 1;
+        align-self: start;
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        margin-top: -6rem;
     }
+
+    .grid__container-four {
+        align-self: start;
+        grid-column:  2 / 5;
+        margin-top: -6rem;
+    }
+
+    .grid__container-five {
+        grid-column: 5 / 6;
+        grid-row: 1 / 3;
+    }
+    
   } 
-
-
-
-
-
-
-
-
